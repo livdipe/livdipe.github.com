@@ -23,7 +23,7 @@
 
         make clean
 
-就会出现`make: `clean' is up to date.`的提示，并且hello文件并
+就会出现`make: \`clean' is up to date.`的提示，并且hello文件并
 
 没有被删除
 
@@ -44,8 +44,9 @@
 此时执行`make clean` 就可以删除掉hello文件
 
 伪目标可以解决的问题:
-    1. 如上，为了避免在makefile中定义的只执行命令的目标
 
-        和工作目录下的实际文件出现名字冲突
+1. 如上，为了避免在makefile中定义的只执行命令的目标
 
-    2. 另一种是提交执行makefile时的效率
+   和工作目录下的实际文件出现名字冲突
+
+2. 另一种是提交执行makefile时的效率
